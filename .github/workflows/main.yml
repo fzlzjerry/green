@@ -18,7 +18,7 @@ jobs:
         run: |
           git config --local user.email "james20081204@gmail.com"
           git config --local user.name "fzlzjerry"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "每天一个green"
           git push
